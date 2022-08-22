@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/mystyle.css">
+    <title>August 21,2020</title>
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="page-preview">
+        <div class="page-preview-body">
+        <iframe id="target" src="/images/resized.png" width="100%" height="200px" style="width: 100%;"  frameborder="0"></iframe>
+        <script>
+            var div = document.getElementById("target");
+            div.onload = function () {
+                div.style.height = div.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
+            <div class="text">
+            <h2 class="display-3 outside">Outside the box</h2>
+            </div>
+
+            <!-- flipbox1 -->
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h3 class="display-3 fw-lighter">Passionate</h3>
+                </div>
+                <div class="flip-box-back">
+                    <h3 class="display-3 fw-lighter">Desire</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- flipbox2 -->
+        <div class="flip-box2">
+            <div class="flip-box-inner2">
+                <div class="flip-box-front2">
+                    <h3 class="display-3 fw-lighter">Inspired</h3>
+                </div>
+                <div class="flip-box-back2">
+                    <h3 class="display-3 fw-lighter">Action</h3>
+                </div>
+            </div>
+        </div>
+
+            <!-- flipbox3 -->
+            <div class="flip-box3">
+                <div class="flip-box-inner3">
+                    <div class="flip-box-front3">
+                        <h3 class="display-3 fw-lighter">Deliberate</h3>
+                    </div>
+                    <div class="flip-box-back3">
+                        <h3 class="display-3 fw-lighter">Focus</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- flipbox4 -->
+            <div class="flip-box4">
+                <div class="flip-box-inner4">
+                    <div class="flip-box-front4">
+                        <h3 class="display-3 fw-lighter">Divine</h3>
+                    </div>
+                    <div class="flip-box-back4">
+                        <h3 class="display-3 fw-lighter">Timing</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- typewriter text -->
+            <div class="container">
+                <div class="vertical-center">
+                    <button onclick="typeWriter()">Switched On</button>
+                </div>
+
+                <p id="demo"></p>
+            </div>
+            <script>
+                var i = 0;
+                var txt = 'Meditate and quiet the mind is stopping resisting thought and accessing dreams.  Note to self: Breathe.';
+                var speed = 50;
+
+                function typeWriter() {
+                    if (i < txt.length) {
+
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    }
+                }
+            </script>
+
+        
+
+
+
+
+        </div>
+    </div>
+</div>
+
+ <!-- coming soon -->
+ <!-- <div class="container-xl"> -->
+<div class="bgImg">
+    <div class="topLeft">
+        <p>RaePark</p>
+    </div>
+    <div class="middle">
+        <h1 class="display-1">COMING SOON</h1>
+        <hr>
+        <p id="demo1" style="font-size:60px; color: chocolate;"></p>
+    </div>
+    <div class="bottomLeft">
+        <p>Wealth Creation</p>
+    </div>
+</div>
+
+
+<script>
+    // Set the date we're counting down to 
+    var countDownDate = new Date("Feb 7, 2025 15:37:25").getTime();
+
+    // Update the count down every 1 second
+    var countDownFunction = setInterval(function() {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+        
+
+        // Find the distance between now and the count down date 
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours =  Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes =  Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds =  Math.floor(distance % (1000 * 60)) / 1000;
+
+        // Output the result in an element with id="demo"
+
+        document.getElementById("demo1").innerHTML = days + "d  " + hours + "h  " + minutes + "m  " + seconds + " s";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(countDownFunction);
+            document.getElementById("demo1").innerHTML = "ARRIVED";
+        }
+    }, 1000);
+
+</script>
+
+<p class="text-center fw-ligher">Placing foreign investments in a LLC sitting inside a holding company as the umbrella company for tax benefits.</p>
+
+<div class="parallax"></div>
+
+<p class="text-center fw-ligher">With the help of a creditable lawyer, writing the articles of organization to establish the details of each LLC's management and operation, and placing each LLC in an offshore account for added protection.</p>
+
+<footer>
+    <p>Author: Izreel James<br>
+        <a href="https://www.linkedin.com/in/izreel-james-1013525/">IzreelJames@gmail.com</a></p>
+</footer>
+
+
+    <script src="/lib/popper.min.js"></script>
+    <script src="/lib/jquery-3.6.0.min.js"></script>
+    <script src="/lib/js/bootstrap.min.js"></script>
+</body>
+</html>

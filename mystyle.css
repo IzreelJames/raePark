@@ -1,0 +1,187 @@
+body, html {
+    height: 100%;
+}
+
+.outside {
+    position: absolute;
+    top: 26px;
+    right: 236px;
+}
+
+.page-preview {
+    border-radius: 0;
+    height: 100%;
+}
+
+.page-preview-body {
+    height: calc(100% -70px);
+    overflow: hidden;
+    text-align: center;
+}
+
+.flip-box  {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #8d8989;
+    perspective: 1000px;
+    position: absolute;
+    top: 226px;
+    right: 96px;
+}
+
+
+.flip-box2{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #8d8989;
+    perspective: 1000px;
+    position: absolute;
+    top: 526px;
+    right: 96px;
+}
+
+.flip-box3{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #8d8989;
+    perspective: 1000px;
+    position: absolute;
+    top: 826px;
+    right: 96px;
+}
+
+.flip-box4{
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #8d8989;
+    perspective: 1000px;
+    position: absolute;
+    top: 1126px;
+    right: 96px;
+}
+
+.flip-box-inner, .flip-box-inner2, .flip-box-inner3, .flip-box-inner4{
+    position: relative;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.85s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner,.flip-box2:hover .flip-box-inner2,.flip-box3:hover .flip-box-inner3,.flip-box4:hover .flip-box-inner4 {
+    transform: rotateY(180deg);;
+}
+
+.flip-box-front, .flip-box-back , .flip-box-front2, .flip-box-back2,  .flip-box-front3, .flip-box-back3 ,.flip-box-front4, .flip-box-back4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-box-front{
+    background-color:#b29f94;
+    color: black;
+}
+
+.flip-box-back {
+    background-color: #603813;
+    color: wheat;
+    transform: rotateY(180deg);
+}
+
+.flip-box-front2 {
+    background-color:#603813;
+    color: black;
+}
+
+.flip-box-back2 {
+    background-color:#b29f94 ;
+    color: wheat;
+    transform: rotateY(180deg);
+}
+
+.flip-box-front3 {
+    background-color:#ffa751;
+    color: black;
+}
+
+.flip-box-back3 {
+    background-color:#e65c00 ;
+    color: wheat;
+    transform: rotateY(180deg);
+}
+
+.flip-box-front4 {
+    background-color: #e65c00;
+    color: black;
+}
+
+.flip-box-back4 {
+    background-color:#ffa751 ;
+    color: wheat;
+    transform: rotateY(180deg);
+}
+
+.bgImg {
+    background-image: url('/images/randy-tarampi-U2eUlPEKIgU-unsplash.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: fantasy;
+    font-size: 25px;
+}
+
+.topLeft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+.bottomLeft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+/* parallax */
+.parallax {
+    background-image: url('/images/kaleidico-26MJGnCM0Wc-unsplash.jpg');
+    min-height: 500px;
+
+    /* set a specific height */
+    background-attachment: fixed;
+
+    /* parallex scrolling effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color:#b29f94 ;
+    color: white;
+}
